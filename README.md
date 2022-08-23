@@ -12,6 +12,7 @@ Exercício de FrontEnd cujo o objetivo é criar uma aplicação semelhante ao Re
    * [Tecnologias](#tecnologias)
    * [Link do Surge](#surge)
    * [Rodando o Projeto](#front)
+   * [Imagens](#images)
    * [Colaboradores](#colaboradores)
 <!--te-->
 
@@ -64,6 +65,17 @@ Caso queira visualizar o código, basta acessar o seguinte link: https://macabre
 4. yarn start
 ```
 O Projeto abrirá no seu navegador padrão na porta 3000
+
+## <h2 id=images>Imagens do Projeto</h2>
+
+- Tela de Login
+![image](https://user-images.githubusercontent.com/22088576/186239484-ec4c401d-c279-44d7-9a63-44af917e65c8.png)
+
+- Tela de Cadastro
+![image](https://user-images.githubusercontent.com/22088576/186239742-6547dedf-239d-41d3-b3bc-8c212042658f.png)
+
+- Tela de Feed (Tela que contem os posts e o form para enviar um post)
+![image](https://user-images.githubusercontent.com/22088576/186239996-6bb00da9-14b4-4ae0-891b-91fb7021d535.png)
 
 
 ## <h2 id=colaboradores>Desenvolvedor</h2>
