@@ -18,7 +18,7 @@ export const Login = () => {
 
     const navigate = useNavigate()
 
-    const { form, onChange } = useForm({
+    const { form, onChange, clear } = useForm({
         email: '',
         password: ''
     })

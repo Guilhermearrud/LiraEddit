@@ -1,26 +1,28 @@
 import useRequestData from './../../hooks/useRequestData';
 import { baseURL } from './../../constants/url';
-import { PostCardContainer, SendTo, BodyPost } from './style';
 import { PostCommentForm } from './PostCommentForm';
+import { PostCommentCard } from '../../components/PostCommentCard';
 
-export const Feed = () => {
+export const Feed = (props) => {
 
-    const [posts] = useRequestData([], `${baseURL}/posts`);
+    const [posts, getPosts] = useRequestData([], `${baseURL}/posts`);
 
     const listPost = posts.map((post) => {
         return (
-            <PostCardContainer>
-                <SendTo>Enviado por: {post.username}</SendTo>
-                <h3>{post.title}</h3>
-                <BodyPost>{post.body}</BodyPost>
-            </PostCardContainer>
+            <PostCommentCard 
+                key={post.id}
+                post={post}
+                getPosts={getPosts}
+            />
         )
     })
 
-
     return (
         <div>
-            <PostCommentForm/>
+            <PostCommentForm
+            getPosts={getPosts}
+            />
+            
             {listPost}
         </div>
     )

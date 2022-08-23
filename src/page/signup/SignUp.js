@@ -94,8 +94,12 @@ export const SingUp = () => {
                         fullWidth
                         variant="contained"
                         sx={{ mt: 3, mb: 2 }}
+                        style={{
+                            borderRadius: 35,
+                            background: 'linear-gradient(90deg, #ff6489 0%, #f9b24e 100%)',
+                        }}
                     >
-                        Sign Up
+                        Criar Conta
                     </Button>
 
                     <Button
@@ -103,6 +107,10 @@ export const SingUp = () => {
                         fullWidth
                         variant="contained"
                         sx={{ mt: 1, mb: 2 }}
+                        style={{
+                            borderRadius: 35,
+                            background: 'linear-gradient(90deg, #ff6489 0%, #f9b24e 100%)',
+                        }}
                     >
                         Ja tem conta? Faça login aqui!
                     </Button>

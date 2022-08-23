@@ -1,22 +1,23 @@
+import axios from "axios"
+import { baseURL } from './../constants/url';
 
-
-export const getPost = (form, navigate) => {
-
-    const headers = {
-        headers: {
-            Authorization: localStorage.getItem('token')
-        }
-    }
+export const createPost = (form, getPosts) => {
 
     const body = form
 
-    axios.post(`${baseURL}/posts`, body)
-    .then((res) => {
-        localStorage.setItem('token', res.data.token)
-        
-    })
-    .catch((err) => {
-        console.log(err.response)
+    axios.post(`${baseURL}/posts`, body, {
+      headers: {
+        Authorization: localStorage.getItem("token")
+      }
     })
 
-}
+    .then((res) => {
+      alert(res.data)
+      getPosts()
+    })
+
+    .catch((er) => {
+      alert(er.response.message)
+
+    })
+  }

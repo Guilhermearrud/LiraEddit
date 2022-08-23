@@ -1,15 +1,17 @@
 import { BodyInput, PostFormContainer, TitleInput } from "./style"
 import { useForm } from './../../hooks/useForm';
+import { createPost } from "../../services/postServices";
 
-export const PostCommentForm = () => {
+export const PostCommentForm = (props) => {
 
-    const { form, onChange } = useForm({
+    const { form, onChange, clear } = useForm({
         title: "",
         body: ""
     })
 
     const onSubmitPost = (event) => {
         event.preventDefault()
+        createPost(form, props.getPosts)
     }
 
     return (
