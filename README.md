@@ -11,6 +11,7 @@ Exercício de FrontEnd cujo o objetivo é criar uma aplicação semelhante ao Re
    * [Objetivo do Projeto](#objetivo-do-projeto)
    * [Tecnologias](#tecnologias)
    * [Link do Surge](#surge)
+   * [Rodando o Projeto](#front)
    * [Colaboradores](#colaboradores)
 <!--te-->
 
@@ -41,6 +42,28 @@ Para este projeto eu usei as seguintes tecnologias:
 ## <h2 id=surge>🛰Link do Surge</h2>
 
 Caso queira visualizar o código, basta acessar o seguinte link: https://macabre-pet.surge.sh/
+
+<h2 id="front"> 🎲  Rodando o Projeto</h2>
+
+### Pre-Requisitos
+
+- Um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### Como instalar e Rodar
+* Para baixar o projeto
+```
+1. git clone https://github.com/Guilhermearrud/LiraEddit.git
+2. cd LiraEddit
+```
+* Para instalar e rodar o projeto
+```
+3. npm install
+4. npm start
+    ou
+3. yarn install
+4. yarn start
+```
+O Projeto abrirá no seu navegador padrão na porta 3000
 
 
 ## <h2 id=colaboradores>Desenvolvedor</h2>
